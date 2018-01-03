@@ -1,0 +1,150 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #0A090C;
+  margin: 0 10px;
+}
+/*90DDF0*/
+/*083D77*/
+
+.container {
+  max-width: 1200px;
+  background-color: white;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #083D77;
+  color: white;
+  padding: 10px 60px;
+  margin: 0 -60px;
+  border-bottom: 3px solid #90DDF0; 
+}
+
+.row {
+  clear: both;
+  overflow: auto;
+}
+
+.animal {
+  width: 360px;
+  height: 400px;
+  padding-right: 10px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.animal img {
+  max-width: 360px;
+}
+
+.search {
+  background-color: #F0EDEE;
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.search__title {
+  margin-bottom: 0;
+}
+
+.search__choice {
+  width: 150px;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.search__choice h4 {
+  margin-bottom: 0;
+}
+
+.search__choice label {
+  display: block;
+}
+
+.search__choice input {
+  margin-right: 0.5rem;
+}
+
+.animal__name {
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+}
+
+.animal__trait {
+  display: inline-block;
+  margin: 2px 0;
+  border-radius: 10px;
+  background-color: #90DDF0;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+}
+
+.footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.footer__block {
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 255, 0.3);
+  position: relative;
+}
+
+.footer__block::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer__block--donate::after {
+  background: url(donate.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__block--volunteer::after {
+  background-image: url(volunteer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__block--location::after {
+  background-image: url(location.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__block a {
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+  font-size: 3rem;
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  color: white;
+}
