@@ -1,11 +1,11 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
 
 body {
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #0A090C;
-  margin: 0 10px;
+  margin: 0;
 }
 /*90DDF0*/
 /*083D77*/
@@ -13,16 +13,38 @@ body {
 .container {
   max-width: 1200px;
   background-color: white;
-  padding: 0 60px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+.site-logo {
+  display: inline-block;
 }
 
 .site-header {
   background-color: #083D77;
   color: white;
-  padding: 10px 60px;
-  margin: 0 -60px;
-  border-bottom: 3px solid #90DDF0; 
+  padding: 10px 30px;
+  border-bottom: 3px solid #90DDF0;
+}
+
+.main-menu {
+  float: right;
+  margin-top: 20px;
+}
+
+.main-menu__list {
+  list-style-type: none;
+}
+
+.main-menu__list-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
 
 .row {
@@ -33,9 +55,11 @@ body {
 .animal {
   width: 360px;
   height: 400px;
-  padding-right: 10px;
+  padding: 10px;
   float: left;
   margin-bottom: 10px;
+  margin-right: 10px;
+  border: 1px solid gray;
 }
 
 .animal img {
@@ -49,12 +73,16 @@ body {
   padding: 0 1rem;
 }
 
+.search__form {
+  width: 75%;
+}
+
 .search__title {
   margin-bottom: 0;
 }
 
 .search__choice {
-  width: 150px;
+  width: 25%;
   float: left;
   margin-bottom: 1rem;
 }
@@ -69,6 +97,10 @@ body {
 
 .search__choice input {
   margin-right: 0.5rem;
+}
+
+.profiles__container{
+  margin: 0 auto;
 }
 
 .animal__name {
@@ -96,7 +128,7 @@ body {
   width: 33.33%;
   height: 300px;
   display: block;
-  margin: 0;
+  margin: 30px 0 0;
   padding: 0;
   text-align: center;
   background-size: cover;
@@ -117,12 +149,17 @@ body {
   z-index: -1;
 }
 
+.footer__block:hover:after {
+  opacity: 1;
+}
+
 .footer__block--donate::after {
   background: url(donate.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 .footer__block--volunteer::after {
   background-image: url(volunteer.jpg);
