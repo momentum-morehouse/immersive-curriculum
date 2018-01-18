@@ -1,23 +1,27 @@
 // 1. Set the variable `name` to the string "Addison".
 
-// 2. Set candies equal to 20, people to 6, and leftover equal to the remainder of dividing 20 by 6.
+// 2. Set candies equal to 20, people to 6, and leftover equal
+// to the remainder of dividing 20 by 6.
 
-// 3. Create a function called greeting that returns "Hello, <name>!", where <name> is the name given as an argument to the function
+// 3. Create a function called greeting that returns "Hello, <name>!",
+// where <name> is the name given as an argument to the function.
 
-// 4. Create a function called isOdd that, given a number, will return true if it is odd and false if it is not.
+// 4. Create a function called isOdd that, given a number, will
+// return true if it is odd and false if it is not.
 
-// 5. Create a function called isEven that, given a number, will return true if it is even and false if it is not.
+// 5. Create a function called isEven that, given a number, will
+// return true if it is even and false if it is not.
 
 // 6. Create a function called fahrenheitToCelsius that takes a
-// Fahrenheit temperature as an argument and returns the \
+// Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 
 // 6. Create a function called celsiusToFahrenheit that takes a
-// Celsius temperature as an argument and returns the \
+// Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 
 // 7. Create a function called fahrenheitToKelvin that takes a
-// Fahrenheit temperature as an argument and returns the \
+// Fahrenheit temperature as an argument and returns the
 // temperature in Kelvin. This function must use your previous
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
@@ -35,7 +39,7 @@
 // en - Hello, <name>!
 // es - ¡Hola, <name>!
 // fr - Bonjour, <name>!
-// eo - Salution, <name>!
+// eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
 
