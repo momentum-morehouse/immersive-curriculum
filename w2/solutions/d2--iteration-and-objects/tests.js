@@ -44,44 +44,6 @@ describe('intersection', function () {
   })
 })
 
-describe('deviations', function () {
-  it("returns an empty array for an empty array", function () {
-    assert.deepEqual([], deviations([]));
-  })
-
-  it("calculates the deviations of an array of numbers", function () {
-    assert.deepEqual([-2.5, -0.5, 0.5, 2.5], deviations([2, 4, 5, 7]));
-  })
-})
-
-describe('standardDeviation', function () {
-  it("returns undefined for an empty array", function () {
-    assert.isUndefined(standardDeviation([]));
-  })
-
-  it("returns 0 for an array with one number", function () {
-    assert.equal(0, standardDeviation([10]));
-  });
-
-  it("returns 0 for an array with the same number multiple times", function () {
-    assert.equal(0, standardDeviation([10, 10, 10, 10]));
-  });
-
-  it("returns the standard deviation of an array of numbers", function () {
-    assert.closeTo(
-      1.8027,
-      standardDeviation([2, 4, 5, 7]),
-      0.001
-    );
-
-    assert.closeTo(
-      6.4103,
-      standardDeviation([57,57.5,60,65,69.2,70,75]),
-      0.001
-    )
-  })
-})
-
 describe('minimum', function () {
   it("returns undefined for an empty array", function () {
     assert.isUndefined(minimum([]));
