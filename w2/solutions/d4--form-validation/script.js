@@ -1,3 +1,5 @@
+var isInvalid = false;
+
 function markValid(field) {
     field.classList.remove('input-invalid');
     field.classList.add('input-valid');
@@ -5,6 +7,7 @@ function markValid(field) {
 }
 
 function markInvalid(field, msgs) {
+    isInvalid = true;
     field.classList.remove('input-valid');
     field.classList.add('input-invalid');
 
@@ -27,6 +30,7 @@ function clearErrorMsgs(field) {
 }
 
 function validate() {
+    isInvalid = false;
     validateName();
     validateCar();
     validateStartDate();
@@ -34,15 +38,22 @@ function validate() {
     validateCardNumber();
     validateCVV();
     validateExpirationDate();
+    if (isInvalid) {
+      clearPrice();
+    } else {
+      showPrice();
+    }
 }
 
 function validateName() {
     var input = document.getElementById('name');
     var field = document.getElementById('name-field');
     if (input.value === "") {
-        markInvalid(field, ['Name is required.'])
+        markInvalid(field, ['Name is required.']);
+        return false;
     } else {
         markValid(field);
+        return true;
     }
 }
 
@@ -65,8 +76,10 @@ function validateCar() {
 
     if (errorMsgs.length > 0) {
         markInvalid(field, errorMsgs);
+        return false;
     } else {
         markValid(field);
+        return true;
     }
 }
 
@@ -75,14 +88,16 @@ function validateStartDate() {
     var field = document.getElementById('start-date-field');
     if (input.value === "") {
         markInvalid(field, ['Date parking is required.'])
+        return false;
     } else {
         var startDate = new Date(input.value + "T00:00");
         var now = new Date();
-        console.log(input.value, startDate, now);
         if (startDate < now) {
             markInvalid(field, ['Date parking must be in the future.']);
+            return false;
         } else {
             markValid(field);
+            return true;
         }
     }
 }
@@ -92,14 +107,18 @@ function validateNumberOfDays() {
     var field = document.getElementById('days-field');
     if (input.value === "") {
         markInvalid(field, ['Number of days is required.'])
+        return false;
     } else {
         var days = parseInt(input.value, 10);
         if (isNaN(days)) {
             markInvalid(field, ['Number of days must be a number.'])
+            return false;
         } else if (days < 1 || days > 30) {
             markInvalid(field, ['Number of days must be between 1 and 30.'])
+            return false;
         } else {
             markValid(field);
+            return true;
         }
     }
 }
@@ -109,11 +128,14 @@ function validateCardNumber() {
     var field = document.getElementById('credit-card-field');
     if (input.value === "") {
         markInvalid(field, ['Credit card is required.']);
+        return false;
     } else {
         if (!isValidCardNumber(input.value)) {
             markInvalid(field, ['Credit card format is not valid.']);
+            return false;
         } else {
             markValid(field);
+            return true;
         }
     }
 }
@@ -123,12 +145,25 @@ function validateCVV() {
     var field = document.getElementById('cvv-field');
     if (input.value === "") {
         markInvalid(field, ['CVV is required.']);
+        return false;
     } else {
-        var cvv = parseInt(input.value, 10);
-        if (isNaN(cvv) || cvv < 100 || cvv > 999) {
+        var cvv = input.value;
+        var invalid = false;
+        if (cvv.length != 3) {
+            invalid = true;
+        }
+        for (var idx = 0; idx < 3; idx++) {
+            if (isNaN(parseInt(cvv[idx]), 10)) {
+                invalid = true;
+            }
+        }
+
+        if (invalid) {
             markInvalid(field, ['CVV must be a three digit number.'])
+            return false;
         } else {
             markValid(field);
+            return true;
         }
     }
 }
@@ -138,34 +173,29 @@ function validateExpirationDate() {
     var field = document.getElementById('expiration-field');
     if (input.value === "") {
         markInvalid(field, ['Expiration date is required.']);
-        return;
+        return false;
     }
 
     var month,
-        year,
-        yearStart;
+        year;
     var expiration = input.value;
-
-    if (expiration[0] == '0') {
-        month = parseInt(expiration.slice(0, 2), 10);
-        yearStart = 3;
-    } else if (expiration[0] == '1' && (expiration[1] == '1' || expiration[1] == '2')) {
-        month = parseInt(expiration.slice(0, 2), 10);
-        yearStart = 3;
-    } else {
-        month = parseInt(expiration[0], 10);
-        yearStart = 2;
+    var slashPos = expiration.indexOf("/");
+    if (slashPos == -1) {
+        markInvalid(field, ['Expiration date must be in the format MM/YY.']);
+        return false;
     }
-    year = parseInt(expiration.slice(yearStart, yearStart + 2));
+
+    month = parseInt(expiration.slice(0, slashPos), 10);
+    year = parseInt(expiration.slice(slashPos + 1), 10);
 
     if (isNaN(month) || isNaN(year)) {
         markInvalid(field, ['Expiration date must be in the format MM/YY.']);
-        return;
+        return false;
     }
 
     if (month < 1 || month > 12 || year < 1 || year > 99) {
         markInvalid(field, ['Expiration date must be a valid month and year.']);
-        return;
+        return false;
     }
 
     year += 2000;
@@ -175,10 +205,11 @@ function validateExpirationDate() {
 
     if (year < todayYear || (year == todayYear && month < todayMonth)) {
         markInvalid(field, ['Expiration date must not be in the past.']);
-        return;
+        return false;
     }
 
     markValid(field);
+    return true;
 }
 
 function isValidCardNumber(number) {
@@ -204,11 +235,55 @@ function luhnCheck(val) {
     return (sum % 10) == 0;
 }
 
+function calculatePrice(startDate, numberOfDays) {
+    var days = [];
+    for (var i = 0; i < numberOfDays; i++) {
+      days.push(i);
+    }
+    var year = startDate.getFullYear();
+    var month = startDate.getMonth();
+    var date = startDate.getDate();
+
+    days = days.map(function (day) {
+      return new Date(year, month, date + day)
+    })
+
+    var isWeekend = days.map(function (date) {
+      return date.getDay() == 0 || date.getDay() == 6;
+    })
+
+    var price = isWeekend.reduce(function (total, weekend) {
+      if (weekend) {
+        return total + 7;
+      } else {
+        return total + 5;
+      }
+    }, 0);
+
+    return price;
+}
+
+function clearPrice() {
+  var priceEl = document.getElementById("total");
+  priceEl.innerText = "";
+}
+
+function showPrice() {
+  var dateInput = document.getElementById('start-date');
+  var date = new Date(dateInput.value + "T00:00Z");
+  var daysInput = document.getElementById('days');
+  var days = parseInt(daysInput.value, 10);
+
+  var price = calculatePrice(date, days);
+
+  var priceEl = document.getElementById("total");
+  priceEl.innerText = "Your total cost is $" + price + ".";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var button = document.getElementById("submit-button");
     button.addEventListener('click', function(event) {
         event.preventDefault();
         validate();
-        console.log('clicked');
     })
 })

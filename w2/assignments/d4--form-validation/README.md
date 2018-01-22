@@ -38,6 +38,12 @@ Add the following validations:
 
 ### Step 4
 
+Add the ability to show the user the total cost of their parking when they click the "Make Reservation" button. The div with id "total" should be filled with text showing the cost. This text should be removed if the form becomes invalid.
+
+The cost is $5 per weekday, and $7 per weekend day. `.map` and `.reduce` will be very helpful in calculating the total cost.
+
+### Step 5
+
 Validate the format of the credit card number. The following code will let you know if it is valid:
 
 ```js
@@ -67,7 +73,7 @@ function luhnCheck(val) {
 
 This code only works with 16 digit card numbers. "4111111111111111" is a valid card number you can use for testing purposes.
 
-### Step 5
+### Step 6
 
 Add the following validations:
 
