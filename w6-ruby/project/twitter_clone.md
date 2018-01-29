@@ -1,16 +1,24 @@
-Build a Microblogging Application
-==================================
+Build a Microblogging API
+==========================
+
+#TODO: Integrate with front end project requirements
 
 ## Skills
 TODO
 
 ## Description
 
-For this group project we will build a single-page microblogging application that works like Twitter! The application will allow users to create and share short posts. This will also be your first opportunity to work together with a front-end team to create a full end-to-end product.
+For this group project we will work together to build separate front and back end applications that work like Twitter! The application will allow users to create and share short posts. This will also be your first opportunity to work together with a front-end team to create a full end-to-end product.
 
-_Your app does not have to recreate Twitter. It should have its own theme and style, and it should meet the functional requirements. Also, yes, the posts are tweets. But please find another name to call them in your app._
+_Yes, the posts are tweets. But please find another name to call them in your app._
 
-The application should be deployed to Heroku, with a link to the production app provided in your repo.
+## Back end project details
+As part of this assignment, you'll need to meet with your front-end team to determine the data that they will need. From there, you'll need to design your API, including mapping the endpoints you'll expose and the data structures you will return.
+
+The application should be deployed to Heroku, and you will need to provide documentation for your API uses in your README. In the documentation, please list the available endpoints and any query parameters you can accept. Think about the documentation that's been helpful to you, and include any information that will make your front-end developers' job easier.
+
+## Front end project details
+TODO
 
 ### Requirements
 - Users should have a `username`, a `password_digest`, and any other info you think a user should have.
@@ -21,7 +29,6 @@ The application should be deployed to Heroku, with a link to the production app 
   - Only the user that created a post should be able to delete it.
 - Add *client-side validation* to the post submission form. Posts should not be submittable if they are less than 2 characters or greater than 140 characters. This validation should exist on the model, but should be shown to the user while they are typing their post (see the [client_side_validations gem](https://github.com/DavyJonesLocker/client_side_validations)).
 - Add the post form to the main page, so users can read all the existing posts and create a new post from the same page.
-- Use AJAX to submit and display new posts.
 
 ### Story details
   - As a user, I should be able to logout by clicking a link in the navbar.
@@ -31,15 +38,14 @@ The application should be deployed to Heroku, with a link to the production app 
 
 ### Challenges
   - The root url of the site shows a list of the top users (ordered by who has the most posts) in a sidebar.
-  - Create a new type of user, an admin user. This admin user should be allowed to edit anybody's posts or user accounts.
-    - No one should be able to create an admin user from the site, (it'll have to be created from the rails console), but they should be able to login to an existing admin account.
   - Add the ability to "follow" other users on the site. If you are 'following' a user, your dashboard should only show the posts from the users you are following. See the [`acts_as_follower` gem](https://github.com/tcocca/acts_as_follower).
   - Add the ability to "unfollow" users you have followed.
   - Display all the users that a user is following and who is following them on their profile.
-  - The buttons to follow/unfollow a user should be done via AJAX.
+  - Create a new type of user, an admin user. This admin user should be allowed to edit anybody's posts or user accounts.
+    - No one should be able to create an admin user from the site, (it'll have to be created from the rails console), but they should be able to login to an existing admin account.
+
 
 ### Tips
   - Part of this assignment is learning to work with a front end team. Time spent on project planning at the beginning will save you time fixing costly mistakes due to miscommunications later on.
-  - Establish a clear git workflow before anyone commits code.
+  - **Establish a clear git workflow before anyone commits code.**
   - Remember to get your app set up for deploying to Heroku early.
-  - You can use the auth that we have used from previous assignments.
