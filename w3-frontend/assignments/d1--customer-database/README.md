@@ -16,4 +16,4 @@ You must use Parcel to build your site. You must have a `package.json` and `yarn
 
 Your site should look like the following screenshot:
 
-![screenshot.png](example screenshot)
+![example screenshot](screenshot.png)
