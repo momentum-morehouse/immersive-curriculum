@@ -18,14 +18,14 @@ On the first day (today), your application should:
 - Allow questions to have answers.
 - Allow unauthenticated users to view questions and answers.
 - Have registration and login. Every question and answer will be associated with a user.
-- Allows an authenticated user to create a question or answer an existing question.
--
+- Allow an authenticated user to create a question or answer an existing question.
 
 On the second day, your application should:
-- Send a welcome email when a new user signs up.
-- Paginate the index of questions with [Kaminari](https://github.com/kaminari/kaminari)
-- Allow the original author of the question to mark an answer as correct.
 
+- Send an email to a user when someone posts an answer to a question.
+- Paginate the index of questions with [Kaminari](https://github.com/kaminari/kaminari)
+- Allow a user to upload a profile photo
+- Allow the original author of the question to mark an answer as accepted.
 
 ### Added features if you have time
 - Use AJAX to update the page when a user submits an answer to a question.
