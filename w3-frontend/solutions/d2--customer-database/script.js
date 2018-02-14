@@ -1,3 +1,5 @@
+// import "./style2.scss";
+
 import moment from "moment";
 import voca from "voca";
 
