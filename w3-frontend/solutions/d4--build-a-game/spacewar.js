@@ -2,6 +2,7 @@ import playerImg from "./img/ship.png";
 import enemyImg1 from "./img/enemy1.png";
 import enemyImg2 from "./img/enemy2.png";
 import enemyImg3 from "./img/enemy3.png";
+import explosionImg from "./img/explosion.png";
 import {throttle} from 'lodash';
 
 const BLACK = "rgb(0, 0, 0)";
@@ -18,9 +19,15 @@ class Game {
         this.height = canvas.height;
         this.width = canvas.width;
         this.keyboarder = keyboarder;
-        this.bodies = [];
+        this.reset();
 
         this.addEnemy = throttle(this.addEnemy.bind(this), 500);
+    }
+
+    reset() {
+        this.bodies = [];
+        this.score = 0;
+        this.ended = false;
     }
 
     setup() {
@@ -51,9 +58,24 @@ class Game {
     }
 
     run() {
-        this.update();
-        this.draw();
-        requestAnimationFrame(this.run.bind(this));
+        if (this.ended) {
+            this.ctx.font = "24px sans-serif";
+            this.ctx.textAlign = "center";
+            this.ctx.fillStyle = WHITE;
+            this.ctx.fillText(
+                "Press UP to play again",
+                this.size.x / 2,
+                this.size.y / 2
+            );
+            this.keyboarder.onOnce(KEYS.UP, e => {
+                this.reset();
+                this.start();
+            });
+        } else {
+            this.update();
+            this.draw();
+            requestAnimationFrame(this.run.bind(this));
+        }
     }
 
     update() {
@@ -90,6 +112,15 @@ class Game {
         this.bodies.forEach(body => {
             body.draw();
         });
+
+        this.ctx.font = "24px monospace";
+        this.ctx.textAlign = "right";
+        this.ctx.fillStyle = WHITE;
+        this.ctx.fillText(
+            this.score,
+            this.size.x - 10,
+            40
+        );
     }
 }
 
@@ -179,6 +210,12 @@ class Player extends Body {
             );
         }
     }
+
+    takeHit() {
+        this.game.bodies.push(new Explosion(this.game, this.center, this.size));
+        this.destroyed = true;
+        this.game.ended = true;
+    }
 }
 
 class Bullet extends Body {
@@ -222,6 +259,9 @@ class Enemy extends Body {
 
     update() {
         this.center.y += this.delta;
+        if (this.center.y > this.game.size.y) {
+            this.game.score -= 100;
+        }
         if (this.center.y < 0 || this.center.y > this.game.size.y) {
             this.destroyed = true;
         }
@@ -238,6 +278,63 @@ class Enemy extends Body {
             );
         }
     }
+
+    takeHit() {
+        this.game.bodies.push(new Explosion(this.game, this.center, this.size));
+        this.destroyed = true;
+        this.game.score += 10;
+    }
+}
+
+class Explosion extends Body {
+    constructor(game, center, size) {
+        super(game, center, size);
+        this.imageLoaded = false;
+        this.image = new Image(size.x, size.y);
+        this.image.addEventListener('load', () => {
+            this.imageLoaded = true;
+        })
+        this.image.src = explosionImg;
+        this.sx = 0;
+        this.sy = 0;
+        this.frame = 0;
+    }
+
+    update() {
+        this.frame += 1;
+        const frames = 10;
+
+        if (this.frame > frames * 4) {
+            this.destroyed = true;
+        } else if (this.frame > frames * 3) {
+            this.sx = 70;
+            this.sy = 70;
+        } else if (this.frame > frames * 2) {
+            this.sx = 0;
+            this.sy = 70;
+        } else if (this.frame > frames) {
+            this.sx = 70;
+            this.sy = 0;
+        }
+    }
+
+    draw() {
+        if (this.imageLoaded) {
+            this.game.ctx.drawImage(
+                this.image,
+                this.sx,
+                this.sy,
+                70,
+                70,
+                this.center.x - this.size.x / 2,
+                this.center.y - this.size.y / 2,
+                this.size.x,
+                this.size.y
+            );
+        }
+    }
+
+    takeHit() {}
 }
 
 class Keyboarder {
