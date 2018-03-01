@@ -1,4 +1,4 @@
-# GitHub VCard
+# GitHub Bio Site
 
 ## Skills
 
@@ -19,6 +19,10 @@ In today's project, you'll be asked to not only write code to make live Ajax req
 Since there are no starter files provided, you'll need to create your own HTML, CSS and JavaScript file and link them together properly. Before you start writing any JavaScript, we suggest you spend a few moments reading through the GitHub API docs listed below to get familiar with how you can obtain the data.
 
 Once you have a decent grasp on that, start setting up your Ajax calls and setting up your callback functions to work with the data you retrieve.
+
+## Bonus steps
+
+Read up on the [hCard microformat](http://microformats.org/wiki/h-card) and make sure your page conforms to the hCard standard.
 
 ## Resources
 
