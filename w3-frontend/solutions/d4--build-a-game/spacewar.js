@@ -19,6 +19,7 @@ class Game {
         this.height = canvas.height;
         this.width = canvas.width;
         this.keyboarder = keyboarder;
+        this.inverted = false;
         this.reset();
 
         this.addEnemy = throttle(this.addEnemy.bind(this), 500);
@@ -43,6 +44,7 @@ class Game {
         );
         this.keyboarder.onOnce(KEYS.UP, e => {
             this.start();
+            this.run();
         });
     }
 
@@ -52,12 +54,13 @@ class Game {
             { x: this.size.x / 2, y: this.size.y - 40 },
             { x: 30, y: 30 }
         );
-        this.bodies.push(player);
-
-        this.run();
+        this.bodies.push(player);        
     }
 
     run() {
+        this.update();
+        this.draw();
+
         if (this.ended) {
             this.ctx.font = "24px sans-serif";
             this.ctx.textAlign = "center";
@@ -71,11 +74,8 @@ class Game {
                 this.reset();
                 this.start();
             });
-        } else {
-            this.update();
-            this.draw();
-            requestAnimationFrame(this.run.bind(this));
         }
+        requestAnimationFrame(this.run.bind(this));
     }
 
     update() {
@@ -100,12 +100,16 @@ class Game {
             y: 0
         }, {
             x: 30, y: 30
-        }, 2)
+        }, 2 + (this.score / 200 * Math.random()))
 
         this.bodies.push(enemy);
     }
 
     draw() {
+        if (this.inverted) {
+            this.ctx.filter = 'invert(100%)';
+        }
+
         this.ctx.fillStyle = BLACK;
         this.ctx.fillRect(0, 0, this.size.x, this.size.y);
 
@@ -121,6 +125,13 @@ class Game {
             this.size.x - 10,
             40
         );
+    }
+
+    updateScore(delta) {
+        if (this.ended) {
+            return;
+        }
+        this.score = Math.max(0, this.score + delta);
     }
 }
 
@@ -174,15 +185,16 @@ class Player extends Body {
         this.image.src = playerImg;
 
         this.shootBullet = throttle(this.shootBullet.bind(this), 150);
+        this.speed = 8;
     }
 
     update() {
         if (this.game.keyboarder.isDown(KEYS.LEFT)) {
-            this.center.x = Math.max(this.size.x / 2, this.center.x - 5);
+            this.center.x = Math.max(this.size.x / 2, this.center.x - this.speed);
         }
 
         if (this.game.keyboarder.isDown(KEYS.RIGHT)) {
-            this.center.x = Math.min(this.game.size.x - (this.size.x / 2), this.center.x + 5);
+            this.center.x = Math.min(this.game.size.x - (this.size.x / 2), this.center.x + this.speed);
         }
 
         if (this.game.keyboarder.isDown(KEYS.SPACE)) {
@@ -260,7 +272,7 @@ class Enemy extends Body {
     update() {
         this.center.y += this.delta;
         if (this.center.y > this.game.size.y) {
-            this.game.score -= 100;
+            this.game.updateScore(-100);
         }
         if (this.center.y < 0 || this.center.y > this.game.size.y) {
             this.destroyed = true;
@@ -282,7 +294,7 @@ class Enemy extends Body {
     takeHit() {
         this.game.bodies.push(new Explosion(this.game, this.center, this.size));
         this.destroyed = true;
-        this.game.score += 10;
+        this.game.updateScore(10);
     }
 }
 
