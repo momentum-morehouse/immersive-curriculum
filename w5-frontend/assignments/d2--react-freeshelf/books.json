@@ -7,7 +7,7 @@
     "coverImageUrl": "https://raw.githubusercontent.com/getify/You-Dont-Know-JS/master/up%20%26%20going/cover.jpg",
     "publisher": "O'Reilly",
     "publicationDate": "March 2015",
-    "detailedDescription": "It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the "You Don’t Know JS" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid. The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript."
+    "detailedDescription": "It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the 'You Don’t Know JS' book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid. The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript."
   },
   {
     "title": "Learning JavaScript Design Patterns",
@@ -44,7 +44,7 @@
     "author": "Daniel Higgenbotham",
     "url": "https://www.braveclojure.com/clojure-for-the-brave-and-true/",
     "shortDescription": "In Clojure for the Brave and True, you'll learn to wield this awesome language to its fullest!",
-    "coverImageUrl": "https://nostarch.com/sites/default/files/styles/uc_product/public/clojure_cover-front_final.png",
+    "coverImageUrl": "http://nostarch.com/sites/default/files/styles/uc_product/public/clojure_cover-front_final.png",
     "publisher": "No Starch Press",
     "publicationDate": "2015",
     "detailedDescription": "For weeks, months—nay!—from the very moment you were born, you’ve felt it calling to you. At long last you'll be united with the programming language you've been longing for: Clojure! Clojure’s popularity continues to grow, with companies like Netflix using it to build everything from complex, distributed systems to simple microservices to user interfaces. In Clojure for the Brave and True, you'll learn to wield this awesome language to its fullest!"
