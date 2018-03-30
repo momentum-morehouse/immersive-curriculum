@@ -27,6 +27,6 @@ The additional information shown in the expanded view should include:
 
 Note that you will need to handle cases where not all the data is available. In these cases, make sure your UI design can accommodate missing or problematic data and/or supply placeholder images or text so that your page won't look broken without it.
 
-On day one, you can hard code your data while you get your components working. One day two, you should be retrieving data using AJAX. You can use [JSON Server](https://github.com/typicode/json-server) to GET and POST data.
+On day one, you can hard code your data while you get your components working. On day two, you should be retrieving data using AJAX. You can use [JSON Server](https://github.com/typicode/json-server) to GET and POST data.
 
 <!-- TODO: Needs wireframe -->
