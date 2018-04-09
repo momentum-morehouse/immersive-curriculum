@@ -1,10 +1,10 @@
-# Weather App
+# Weather Navigator
 
 ## Skills
 
  TODO
 
- ## Directions
+## Directions
 
 Build a React application that lets users see weather data for a location of their choice.
 
