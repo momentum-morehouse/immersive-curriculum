@@ -16,7 +16,7 @@ Your task is to build a three-page website for a small business, Lazy River Nurs
 
 The homepage should have the name of the business as a level 1 heading, followed by a picture of the store interior.
 
-Under the picture, there should be a navigation menu (using the <nav> element) with three links pointing to the homepage, the "currently in stock" page, and the hours and location page. This navigation menu should be under the header for each page.
+Under the picture, there should be a navigation menu (using the &lt;nav&gt; element) with three links pointing to the homepage, the "currently in stock" page, and the hours and location page. This navigation menu should be under the header for each page.
 
 Under the navigation menu, put the following text:
 
