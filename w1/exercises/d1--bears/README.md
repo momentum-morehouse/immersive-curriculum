@@ -14,10 +14,11 @@ To get started, choose `Remix this` from the Glitch menu in the upper left corne
 
 The resources folder contains page content for the site.
 
-The assets folder includes screenshots of the completed pages. These are not intended to be used as site content! Your goal is to make your site look like those screenshots.
+These screenshots show how your finished site should look:
+(images linked on Glitch)
 
-### _Instructor Notes_
+## _Instructor Notes_
 
-Files are on glitch here https://bears-in-my-html.glitch.me
+Files are on glitch here https://glitch.com/edit/#!/bears-in-my-html
 
 Ask students to remix this project.
