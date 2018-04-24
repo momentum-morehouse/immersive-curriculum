@@ -10,7 +10,7 @@ In this homework, you will practice using Git to put your code on GitHub.
 
 For each previous project:
 
-1. Download your previous project from Thimble.
+1. Download your previous project from Glitch.
 1. Unzip your project into a new directory.
 1. Make this directory a Git repository.
 1. Create a new repository on GitHub for the project.
