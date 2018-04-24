@@ -59,7 +59,7 @@ body {
   float: left;
   margin-bottom: 10px;
   margin-right: 10px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 .animal img {
@@ -131,49 +131,45 @@ body {
   margin: 30px 0 0;
   padding: 0;
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 255, 0.3);
   position: relative;
 }
 
-.footer__block::after {
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+.footer__block--donate {
+  background:
+    linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+    no-repeat center/cover url(donate.jpg);
 }
 
-.footer__block:hover:after {
-  opacity: 1;
+.footer__block--donate:hover {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    no-repeat center/cover url(donate.jpg);
 }
 
-.footer__block--donate::after {
-  background: url(donate.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.footer__block--volunteer {
+  background:
+    linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+    no-repeat center/cover url(volunteer.jpg);
 }
 
-
-.footer__block--volunteer::after {
-  background-image: url(volunteer.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.footer__block--volunteer:hover {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    no-repeat center/cover url(volunteer.jpg);
 }
 
-.footer__block--location::after {
-  background-image: url(location.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.footer__block--location {
+  background:
+    linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+    no-repeat center/cover url(location.png);
 }
+
+.footer__block--location:hover {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    no-repeat center/cover url(location.png);
+}
+
 
 .footer__block a {
   font-family: Oswald, sans-serif;
