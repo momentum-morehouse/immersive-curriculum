@@ -29,16 +29,3 @@ result = num1 - "5";
 // Console.log a sentence that tells the user that information.
 var tacos = 8;
 var burritos = 4;
-
-
-// 8. What will the value of x be?
-var x = (0 == false);
-
-
-// 9. What will `x` be here?
-x = (0 === false);
-
-
-// 10. What does `y` evaluate to?
-var y = ("" == false);
-
