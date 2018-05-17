@@ -1,5 +1,4 @@
-Card Deck
-=========
+# Card Deck
 
 ## Directions
 

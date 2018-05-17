@@ -1,7 +1,4 @@
-Blackjack Planning
-==================
-## Skills
-TODO
+# Blackjack Planning
 
 ## Directions
 Read through [the rules of blackjack](https://en.wikipedia.org/wiki/Blackjack) carefully. After reading through them, write out the steps to run the game in outline format. (See the additional resources for more on the rules of blackjack.)

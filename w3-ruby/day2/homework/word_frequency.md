@@ -1,8 +1,4 @@
-Word Frequency
-==============
-
-## Skills
-TODO
+# Word Frequency
 
 ## Directions
 In this project, you will use Ruby's `File` class and your knowledge of iterators to calculate the frequency of words in a text file. A starter file with a class and some method names is provided, as is a test suite for your code.

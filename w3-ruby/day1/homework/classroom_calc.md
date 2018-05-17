@@ -1,8 +1,4 @@
-Classroom Calculator
-====================
-
-## Skills
-TODO
+# Ruby Classroom
 
 ## Directions
 

@@ -22,6 +22,3 @@ Usually in Ruby, you would put each subclass in a separate file. In this case, y
 To see how successful your player classes are, run `./bin/pig` from the `starter_files/` directory. By default, this will run two `CautiousPlayer`s against each other. You can specify the names of the `Player` subclasses you have written in order to run those subclasses against each other or against `CautiousPlayer`.
 
 The game runner and test suite for this project use some advanced features of Ruby and demonstrate _metaprogramming_ -- that is, code that writes other code. Try reading `bin/pig` and `test/player_test.rb` and figure out how they work.
-
-
-
