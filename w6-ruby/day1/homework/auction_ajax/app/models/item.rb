@@ -1,4 +1,4 @@
-class Item < ActiveRecord::Base
+class Item < ApplicationRecord
   has_many :bids
 
   validates :title, presence: true
@@ -13,4 +13,5 @@ class Item < ActiveRecord::Base
   def next_bid_amount
     [starting_bid, highest_bid_amount + 10].max
   end
+
 end

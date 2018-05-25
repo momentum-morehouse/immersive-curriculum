@@ -1,4 +1,4 @@
-class Bid < ActiveRecord::Base
+class Bid < ApplicationRecord
   belongs_to :item
 
   validates :item, presence: true
@@ -23,4 +23,5 @@ class Bid < ActiveRecord::Base
     return 0 unless item
     item.highest_bid_amount
   end
+
 end

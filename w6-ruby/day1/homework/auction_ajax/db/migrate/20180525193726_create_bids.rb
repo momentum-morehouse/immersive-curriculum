@@ -1,10 +1,10 @@
-class CreateBids < ActiveRecord::Migration
+class CreateBids < ActiveRecord::Migration[5.2]
   def change
     create_table :bids do |t|
       t.integer :item_id
       t.decimal :amount
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

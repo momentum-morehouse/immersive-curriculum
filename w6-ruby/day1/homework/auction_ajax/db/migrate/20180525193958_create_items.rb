@@ -1,4 +1,4 @@
-class CreateItems < ActiveRecord::Migration
+class CreateItems < ActiveRecord::Migration[5.2]
   def change
     create_table :items do |t|
       t.string :title
@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration
       t.decimal :starting_bid
       t.string :image_url
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
