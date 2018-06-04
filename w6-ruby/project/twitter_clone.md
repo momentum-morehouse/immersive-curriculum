@@ -1,9 +1,5 @@
 # Build a Microblogging API
 
-## Skills
-
-TODO
-
 ## Description
 
 For this group project, we will work together to build separate front and back-end applications that work like Twitter! The application will allow users to create and share short posts. This will also be your first opportunity to work together with a front-end team to create a full end-to-end product.
