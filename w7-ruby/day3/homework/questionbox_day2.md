@@ -4,7 +4,7 @@
 
 For this project, your team will build a question and answer platform, not unlike Stack Overflow in format, although you can theme it however you like. After a few days, your application will allow people to ask questions, receive answers, and mark an answer as valid.
 
-The application should be styled with [Bootstrap](https://getbootstrap.com/).
+The application should be styled with [Bootstrap](https://getbootstrap.com/) or another css framework. It does _not_ have to be deployed to Heroku.
 
 On the first day, your application should:
 
