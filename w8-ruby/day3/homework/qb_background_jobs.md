@@ -8,7 +8,7 @@ ActiveJob requires you to decide on a third-party library to use as a queueing s
 
 ## User activity summary
 
-Write a background worker whose purpose is to create an weekly summary of data for each user and send them an email with that summary. Like [Google Takeout](https://takeout.google.com/).
+Write a background worker whose purpose is to create an weekly summary of data for each user and send them an email with that summary. [Google Takeout](https://takeout.google.com/) is an example of the type of summary you could design.
 
 Each user should get a customized weekly email summary of their activity on QuestionBox. The summary should include a list of their own questions and answers that week. Don't worry about styling the email; it's more important that the data is there.
 
@@ -22,5 +22,4 @@ Emails should be sent on a regular schedule to all registered users. If you have
 ### Resources
 - [Active Job Rails Guide](http://edgeguides.rubyonrails.org/active_job_basics.html)
 - [Action Mailer Rails Guide](http://guides.rubyonrails.org/action_mailer_basics.html)
-- [Ruby Standard Library CSV documentation](http://ruby-doc.org/stdlib-2.5.0/libdoc/csv/rdoc/index.html)
-- [RubyZip gem](https://github.com/rubyzip/rubyzip)
+- [Delayed Job](https://github.com/collectiveidea/delayed_job/)
