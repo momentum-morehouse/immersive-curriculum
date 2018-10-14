@@ -1,0 +1,9 @@
+body {
+    background-color: #FFEEEE;
+    font-family: sans-serif;
+}
+
+.game {
+    margin: 1rem auto;
+    text-align: center;
+}

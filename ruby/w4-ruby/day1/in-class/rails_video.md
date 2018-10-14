@@ -1,0 +1,3 @@
+A lot of the early buzz about Rails was caused by a video its creator, David Heinemeier Hansson, made in which he created a blog in a very short time period with Rails. That video has been updated with each new major version of Rails.
+
+Watch DHH's [Rails 5 video](https://www.youtube.com/embed/OaDhY_y8WTo). As you watch, record questions you have. The point of this activity is not to absorb and understand every thing, but to get a feel for how he creates a Rails application.
