@@ -32,9 +32,17 @@ Copy each of these and their output from your terminal and paste them in `output
 
 ### Git-it
 
-Next, go to [the Git-it repository on GitHub](https://github.com/jlord/git-it-electron). Follow the directions there to download and install Git-it. You **do not** have to install Github Desktop, although you can if you want.
+Next, install [Git-it](https://github.com/jlord/git-it-electron), a tutorial program that will walk you through the basics of Git and GitHub. To install it, run:
 
-When you try and run Git-it, you will get a notice that the application is from an unknown developer. To run it, right-click on the application and then choose "Open." You will be presented with a dialog -- choose to run the application.
+```
+$ brew cask install git-it
+```
+
+This should put the Git-it program in your `/Applications` folder.
+
+Git-it will tell you to install Github Desktop. You **do not** have to install this, although you can if you want.
+
+When you try and run Git-it, you may get a notice that the application is from an unknown developer. If so, right-click on the application and then choose "Open." You will be presented with a dialog -- choose to run the application.
 
 Once running, complete the tasks in Git-it.
 
