@@ -6,35 +6,30 @@ Write a program that asks the user for one or more sentences and then lets the u
 
 ## Objectives
 
-### Learning Objectives
-
 After completing this assignment, you should understand:
 
-* Manipulating strings
-* How strings are related to lists
-* Recursion
-
-### Performance Objectives
+- Manipulating strings
+- How strings are related to lists
+- Recursion
 
 After completing this assignment, you should be able to:
 
-* Strip characters out of strings
-* Change the case of strings
-* Look at substrings
+- Strip characters out of strings
+- Change the case of strings
+- Look at substrings
 
 ## Details
 
 ### Deliverables
 
-* A GitHub repo called palindrome containing at least:
-  * This `README.md` file
-  * a file called `palindrome.py`
+- A GitHub repo called palindrome containing at least:
+  - This `README.md` file
+  - a file called `palindrome.py`
 
-### Requirements  
+### Requirements
 
-* Your program must pass the test script `test.sh`. To run this script, run `brew install roundup` first.
-* Your program must output what it is doing at each step.
-* Your program must use a recursive function.
+- Your program must pass the test script `test.sh`. To run this script, run `brew install roundup` first.
+- Your program must output what it is doing at each step.
 
 ## Normal Mode
 
@@ -42,10 +37,10 @@ You have to write a program that, when run, asks the user to input some text. It
 
 Letter casing and punctuation do not matter when testing a palindrome. All of the following are valid palindromes:
 
-* stunt nuts
-* Lisa Bonet ate no basil.
-* A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal: Panama!
-* Doc, note, I dissent. A fast never prevents a fatness. I diet on cod.
+- stunt nuts
+- Lisa Bonet ate no basil.
+- A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal: Panama!
+- Doc, note, I dissent. A fast never prevents a fatness. I diet on cod.
 
 ## Hard Mode
 
@@ -57,6 +52,6 @@ You may want to use the `re.sub` function to strip out punctuation and spaces. A
 
 ## Additional Resources
 
-* [Palindrome list](http://www.palindromelist.net/).
-* [String type in Python](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str).
-* [Regular expression operations](https://docs.python.org/3/library/re.html).
+- [Palindrome list](http://www.palindromelist.net/).
+- [String type in Python](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str).
+- [Regular expression operations](https://docs.python.org/3/library/re.html).
