@@ -22,7 +22,7 @@ After completing this assignment, you should be able to:
 
 ### Deliverables
 
-- A GitHub repo called palindrome containing at least:
+- A GitHub repo containing at least:
   - This `README.md` file
   - a file called `palindrome.py`
 
