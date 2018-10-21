@@ -33,3 +33,7 @@ Read the classes `Message`, `PlaintextMessage`, and `CiphertextMessage`. Using t
 ### Hard Mode
 
 Use the `argparse` module to create a command-line interface for `cipher.py`, allowing a user to encrypt and decrypt messages using it.
+
+## Credits
+
+Adapted from an assignment from [MIT 6.0001](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/).
