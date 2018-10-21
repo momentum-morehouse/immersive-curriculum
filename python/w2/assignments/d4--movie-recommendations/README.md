@@ -14,6 +14,8 @@ After completing this assignment, you should be able to:
 
 ## Details
 
+### Deliverables
+
 - A Git repo containing at least:
   - `README.md` file explaining how to run your project
   - modules for your program
