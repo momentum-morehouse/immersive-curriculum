@@ -1,10 +1,10 @@
-# QuestionBox Day 1
+# QuestionBox
 
 ## Description
 
-For this project, your team will build a question and answer platform, not unlike Stack Overflow in format, although you can theme it however you like. After a few days, your application will allow people to ask questions, receive answers, and mark an answer as valid.
+For this two-day project, your team will build a question and answer platform, similar to Stack Overflow in format, although you can theme it however you like. After a few days, your application will allow people to ask questions, receive answers, and mark an answer as valid. This application should have a front end.
 
-The application should be styled with [Bootstrap](https://getbootstrap.com/) or another css framework. It does _not_ have to be deployed to Heroku.
+The application should be styled with [Bootstrap](https://getbootstrap.com/) or another css framework.
 
 On the first day, your application should:
 
@@ -13,7 +13,7 @@ On the first day, your application should:
 - Allow questions to have answers.
 - Allow unauthenticated users to view questions and answers.
 - Have registration and login.
-- Every question and answer will be associated with a user.
+- Every question and every answer should be associated with a user.
 - Allow an authenticated user to create a question or answer an existing question.
 - A user should be able to view all their questions on a user profile page.
   - Questions cannot be edited once they have been asked (_note_: allowing editing of unanswered questions is listed below as an extra challenge).
@@ -26,11 +26,14 @@ On the second day, your application should:
 - Allow a user to upload a profile photo.
 - Allow the original author of the question to mark an answer as accepted.
 
-### Added features if you have time
+### Extra features and challenges
 
 - Use AJAX to update the page when a user submits an answer to a question.
-- Allow a user to change their password.
-- Send an email to a user to reset their password if they have forgotten it, and allow them to reset it.
 - Allow an unanswered question to be edited.
 - Allow the author of an answer to delete or edit that answer.
-- What else would you like to do? 🤔
+- Allow a user to change their password via a link from the user profile page.
+- Deploy to Heroku. Note that this will require a bit more work to allow uploads and emails.
+  - You'll need to configure a storage backend like Amazon S3 in order to upload files.
+  - To send email from your production app you'll need an add-on for Heroku (e.g. SendGrid, MailGun, or SparkPost).
+- Send an email to a user to reset their password if they have forgotten it, and allow them to reset it.
+- What else would make this application better? 🤔
