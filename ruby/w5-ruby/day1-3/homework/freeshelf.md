@@ -1,6 +1,6 @@
-# FreeShelf Day 3
+# FreeShelf
 
-You are building a Ruby on Rails application to collect an index of free programming books online. This application will, after three days, allow users to look at a list of all the books, add new books, edit or remove books they've added, and checkout books.
+This week, you are building a Rails application to collect an index of free programming books online. You'll work on this application for all three lab days this week. The end goal is an application that allows users to see a list of all the books, register and log in, add new books, edit or remove books they've added, and checkout books.
 
 On the first day, your application should:
 
