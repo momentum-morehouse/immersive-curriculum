@@ -10,6 +10,7 @@ To calculate the frequency of words, you must:
 - remove "stop words" -- words used so frequently they are ignored
 - go through the file word by word and keep a count of how often each word is used
 
+
 When your program is complete, you should be able to run `ruby wordfreq.rb seneca_falls.txt` and get a printed report like this:
 
 ```
@@ -28,3 +29,7 @@ When your program is complete, you should be able to run `ruby wordfreq.rb senec
 ## Starter Files
 
 The class is located in `word_frequency.rb` in the 'starter_files' folder. To run the tests to see if your code is correct, run `ruby word_frequency_test.rb`.
+
+## Links
+
+- [File Class](http://ruby-doc.org/core-2.5.1/File.html)

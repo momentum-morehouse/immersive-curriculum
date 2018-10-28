@@ -24,5 +24,6 @@ Use the `bootstrap-rubygem` gem to include Bootstrap in your Rails app and use i
 
 ## Resources
 
+- [SQLite Browser](http://sqlitebrowser.org/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 - [bootstrap-rubygem](https://github.com/twbs/bootstrap-rubygem)

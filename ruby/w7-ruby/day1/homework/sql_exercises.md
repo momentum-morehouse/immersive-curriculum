@@ -2,7 +2,7 @@
 
 ## Description
 
-For each of the questions below, add the following information to a **Gist** on GitHub:
+For each of the questions below, add the following information to a Markdown file in your homework repo:
 
 - The original question text
 - Your final SQL query (which you must have run and validated on the included database)
@@ -33,7 +33,7 @@ Try these queries if you have time:
 - Find all developers with no time put towards at least one of their assigned projects.
 - Find all pairs of developers who are in two or more different groups together.
 
-
 ### Resources
 
 - [DB Browser for SQLite](https://sqlitebrowser.org/)
+- [Markdown](https://guides.github.com/features/mastering-markdown/)

@@ -142,6 +142,7 @@ from developers
 group by comments.developer_id
 having count(comments.developer_id) >= 5
 
+RESULT "45"	"Joelle Hermann"	"pat@hackett.info"	"2014-11-05"	"2015-07-14 16:15:19.485675"	"2015-07-14 16:15:19.485675"
 
 ### Find the developer who worked the fewest hours in January of 2015
 
@@ -154,6 +155,7 @@ group by developers.id
 order by hours
 limit 1
 
+RESULT: "Ms. Tremayne Kuhn"	"leila@watsica.biz"	"2013-11-01"	"2015-07-14 16:15:18.584130"
 
 ### Find all time entries which were created by developers who were not assigned to that time entry's project
 
@@ -163,7 +165,12 @@ from time_entries as t
   on t.project_id = pa.project_id and t.developer_id = pa.developer_id
 where pa.id is null;
 
-
+RESULT
+481 rows returned in 10ms from: select *
+from time_entries as t
+  left join project_assignments as pa
+  on t.project_id = pa.project_id and t.developer_id = pa.developer_id
+where pa.id is null;
 
 # Find all developers with no time put towards at least one of their assigned projects.
 
