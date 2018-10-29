@@ -286,6 +286,22 @@ $ open -a "Visual Studio Code" index.html
 
 ---
 
+# Setting your default terminal text editor
+
+By default, whenever the terminal needs a text editor, it will use `vim`, which has a large learning curve. To change it to use `nano`, edit your `~/.bash_profile` file by running
+
+`nano ~/.bash_profile`
+
+Add this as the last line:
+
+```sh
+export EDITOR=nano
+```
+
+Can you figure out how to save and close this file?
+
+---
+
 # Clearing the terminal
 
 Sometimes the screen can feel cluttered. To clear your terminal screen you can:
