@@ -1,2 +1,0 @@
-# Momentum Learning Assignment Repository
-
