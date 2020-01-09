@@ -2,6 +2,8 @@
 
 All of our curriculum as well as our instructor handbook can be found within.
 
+* [Skills for assessment](skills.md)
+
 ## Phase 1
 
 * W1D1 - cmd line & git
