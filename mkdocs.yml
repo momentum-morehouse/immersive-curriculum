@@ -1,3 +1,4 @@
 site_name: Momentum Curriculum
 nav:
   - Home: README.md
+  - Skills: skills.md
