@@ -1,6 +1,6 @@
 # Lesson: HTML
 
-[lecture notes](notes-html.md)
+[HTML lecture notes](notes-html.md)
 
 ## Objectives
 
@@ -17,7 +17,7 @@ Given content for a garden store, create a set of interlinked web pages for that
 
 ## Lecture notes
 
-[lecture notes](notes-html.md)
+[HTML lecture notes](notes-html.md)
 
 ## Demo ideas
 

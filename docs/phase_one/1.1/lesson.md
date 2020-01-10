@@ -21,8 +21,8 @@ Students should be able to...
 
 ## Lecture notes
 
-- [Command line lecture notes](./lecture_notes/command-line.md)
-- [Git lecture notes](./lecture_notes/git.md)
+[Command line lecture notes](notes-command-line.md)
+[Git lecture notes](notes-git.md)
 
 ## Demo ideas
 
