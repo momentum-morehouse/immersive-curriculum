@@ -2,3 +2,6 @@ site_name: Momentum Curriculum
 nav:
   - Home: README.md
   - Skills: skills.md
+  - Phase One:
+      - Week 1:
+          - "1.1 Command Line and Git": "phase_one/1.1/lesson.md"
