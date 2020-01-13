@@ -4,5 +4,6 @@ nav:
   - Skills: skills.md
   - Phase One:
       - Week 1:
-          - "1.1 Command Line and Git": "phase_one/1.1/lesson.md"
-          - "1.2 HTML": "phase_one/1.2/lesson.md"
+          - "Establishing the Community of the Classroom": "community.md"
+          - "1. Command Line and Git": "front-end/command-line-and-git/lesson.md"
+          - "2. HTML": "front-end/html/lesson.md"
