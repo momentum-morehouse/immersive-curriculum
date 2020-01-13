@@ -14,7 +14,7 @@
   - e.g. `cal`
 - To get back to the prompt if a process is running, use the keystroke `Ctrl-C`. Sometimes you'll see it written as `^C`
   - show `cat` with no arguments
-- config with `~/.zshrc` (if you installed oh-my-zsh, you'll have had this set up for you)
+- config with `~/.zshrc`
 
 ## File structure
 
@@ -87,6 +87,5 @@
 
 - [http://linuxcommand.org/index.php](http://linuxcommand.org/index.php)
 - [http://www.rayninfo.co.uk/tips/zshtips.html](http://www.rayninfo.co.uk/tips/zshtips.html)
-- [https://github.com/ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [https://explainshell.com/](https://explainshell.com/)
 - Article from A List Apart, ["The \$PATH to Enlightenment"](https://alistapart.com/article/the-path-to-enlightenment/)
