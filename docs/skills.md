@@ -241,7 +241,7 @@ We hope for level 3 with each student on each topic by the end of the course, wi
 
 ### Email and SMS messaging
 
-1. ??? 
+1. Explain when email and SMS messaging makes sense to use in a web application.
 2. Connect Django to an email provider to send automated messages baked in to Django apps (such as password reset).
 3. Send emails and SMS messages from a Django application in response to user actions.
 4. Allow users to interact with your application via SMS or email.
@@ -299,9 +299,9 @@ We hope for level 3 with each student on each topic by the end of the course, wi
 
 ### React hooks
 
-1. ???
-2. ???
-3. Use 
+1. Explain what React hooks are.
+2. Given an example, edit `useState` and `useEffect` to work in your application.
+3. Independently use `useState` and `useEffect` hooks in your function-based components; use custom hooks from examples.
 4. Build custom hooks for your React application.
 
 ### Accessibility
