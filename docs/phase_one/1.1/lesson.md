@@ -10,7 +10,7 @@ Students should be able to...
 
 - Use the terminal to navigate the file system, manipulate files, and use git
 - Understand relative and absolute paths and have some understanding of `$PATH`
-- Use some basic command line utilities like `cat`, `cal`, and `man`
+- Use programs on the command line (e.g. `cat`, `man`, `brew`, `curl`)
 - Understand what version control is and why we use it
 - Understand enough of the concepts of git to start using version control in daily assignments, including `init`, `clone`, `status`, `add`, `commit`, and `push`
 

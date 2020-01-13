@@ -71,8 +71,9 @@
 ## Utilities and other things to demo
 
 - `man`, documentation for programs intended as a reference for usage, options, and arguments
-- `cal` with arguments
+- `cal` with arguments (this is useful primarily to demo how arguments work)
 - `cat`, read files and write them to standard output
+- `curl`, make a network request and receive a response
 - `less`, a page-able text reader (used by things like man pages)
 - `sudo`, assume super-user access rights
 - [optional] `ps`, list running processes (compare Activity Monitor)
