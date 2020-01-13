@@ -27,7 +27,7 @@ Given content for a garden store, create a set of interlinked web pages for that
 
 ## Exercise ideas
 
-- Show students an image (or a prototype like [this](1-1.command_line_and_git.mdhttps://www.justinmind.com/usernote/tests/17386057/17386059/36027864/index.html#/screens/993d5081-ce5b-42bd-9a93-4c8daca4fbbe)?)
+- Show students an image (or a prototype like [this](https://www.justinmind.com/usernote/tests/17386057/17386059/36027864/index.html#/screens/993d5081-ce5b-42bd-9a93-4c8daca4fbbe)?)
 - Pair up and decide on the structure of the HTML document
 - In-class tag quiz -- who can get the most right?
 

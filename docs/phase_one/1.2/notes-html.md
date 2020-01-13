@@ -1,6 +1,6 @@
 # Lecture Notes: HTML
 
-[back to lesson plan](./lesson.md)
+[back to lesson plan](lesson.md)
 
 ## What is HTML?
 

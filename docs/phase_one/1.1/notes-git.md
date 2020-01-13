@@ -77,7 +77,7 @@ When there are one or several commits in the local repository ready to be shared
 
 ## Overview of that process again
 
-- In a git respository, changes made in our editor (aka our working directory or working tree) need to be manually added to enter into the history
+- In a git repository, changes made in our editor (aka our working directory or working tree) need to be manually added to enter into the history
 - The first time we add a new file, we tell Git to add the file to the repository to be tracked
 - This is also called staging a file. A snapshot of our changes is now in the staging area (aka the index, aka the cache), ready to be saved.
 - A commit saves the changes made to a file, not the file as a whole. The commit will have a unique ID so we can track which changes were committed when and by whom.
