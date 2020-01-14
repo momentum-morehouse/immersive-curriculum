@@ -241,7 +241,7 @@ We hope for level 3 with each student on each topic by the end of the course, wi
 
 ### Email and SMS messaging
 
-1. Explain when email and SMS messaging makes sense to use in a web application.
+1. Explain when email and SMS messaging makes sense to use in a web application. 
 2. Connect Django to an email provider to send automated messages baked in to Django apps (such as password reset).
 3. Send emails and SMS messages from a Django application in response to user actions.
 4. Allow users to interact with your application via SMS or email.
