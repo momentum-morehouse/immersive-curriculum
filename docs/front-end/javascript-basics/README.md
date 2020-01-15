@@ -16,7 +16,7 @@ This assignment lets students practice simple code constructs and get immediate 
 
 ## Resources
 
-- [Slides](beginning-javascript.slides.md)
+- [Slides](slides.md)
 
 ## Schedule
 

@@ -2,3 +2,9 @@ site_name: Momentum Curriculum
 nav:
   - Home: README.md
   - Skills: skills.md
+  - Phase One:
+      - Week 2:
+          - "1. Programming Basics with JS": "front-end/javascript-basics/README.md"
+          - "2. Iteration with JS": "front-end/javascript-iteration/README.md"
+          - "3. JS and the DOM": "front-end/javascript-dom/README.md"
+          - "4. JS and Forms": "front-end/javascript-forms/README.md"
