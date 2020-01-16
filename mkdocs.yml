@@ -7,3 +7,5 @@ nav:
           - "Establishing the Community of the Classroom": "community.md"
           - "1. Command Line and Git": "front-end/command-line-and-git/lesson.md"
           - "2. HTML": "front-end/html/lesson.md"
+          - "3. CSS Basics": "front-end/css-basics/lesson.md"
+          - "4. CSS Layout": "front-end/css-layout/lesson.md"
