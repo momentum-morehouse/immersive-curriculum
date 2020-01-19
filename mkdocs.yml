@@ -3,6 +3,12 @@ nav:
   - Home: README.md
   - Skills: skills.md
   - Phase One:
+      - Week 1:
+          - "Establishing the Community of the Classroom": "community.md"
+          - "1. Command Line and Git": "front-end/command-line-and-git/lesson.md"
+          - "2. HTML": "front-end/html/lesson.md"
+          - "3. CSS Basics": "front-end/css-basics/lesson.md"
+          - "4. CSS Layout": "front-end/css-layout/lesson.md"
       - Week 2:
           - "1. Programming Basics with JS": "front-end/javascript-basics/README.md"
           - "2. Iteration with JS": "front-end/javascript-iteration/README.md"
