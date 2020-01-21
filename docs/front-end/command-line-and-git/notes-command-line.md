@@ -5,7 +5,7 @@
 ## Introduction to the shell
 
 - a shell is a text-based user interface that gives you access to the operating system. We call that interface "the command line".
-- We're using a Unix shell called Z-shell/Zsh, which is built on top of the Bash shell
+- We're using a Unix shell called Z-shell/Zsh, which replaces the previously used shell, bash
   - The Mac OS default shell, as of Catalina (10.15), is zsh
 - The terminal is just a program that gives us the command line. Demo opening it and have students follow along.
 - The prompt is where you type commands

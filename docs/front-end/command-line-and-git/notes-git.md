@@ -7,10 +7,8 @@
 ## Define and describe version control
 
 - Version control is a tool that allows you to:
-
-- Collaborate. Write code (or any kind of document) with other people.
-
-- Track and revert changes. Mistakes happen. Wouldn't it be nice if you could see the changes that have been made and go back in time to fix something that went wrong?
+  - Collaborate. Write code (or any kind of document) with other people.
+  - Track and revert changes. Mistakes happen. Wouldn't it be nice if you could see the changes that have been made and go back in time to fix something that went wrong?
 - You already manage versions of your work!
   Do you have files somewhere that look like this?
 
