@@ -4,11 +4,11 @@
 
 # Arrays
 
-An array is a list of other values. These values can be anything, including other arrays. They can be any length, including 0.
+An array is a list of values. These values can be anything, including other arrays. They can be any length, including 0.
 
 ```js
-let people = ["Sam", "Zara", "Autumn", "Cadence", "Gale"]
-let grades = [91, 83, 100, 87]
+let people = ["Sam", "Zara", "Autumn", "Cadence", "Gale"];
+let grades = [91, 83, 100, 87];
 ```
 
 ---
@@ -18,12 +18,12 @@ let grades = [91, 83, 100, 87]
 An _index_ is a number that points to a position in an array. Indexes start at 0 and go to (length - 1), where length is the length of the array.
 
 ```js
-let people = ["Sam", "Zara", "Autumn", "Cadence", "Gale"]
+let people = ["Sam", "Zara", "Autumn", "Cadence", "Gale"];
 
-people[0] // => "Sam"
-people[1] // => "Zara"
-people[4] // => "Gale"
-people[people.length - 1] // => "Gale"
+people[0]; // => "Sam"
+people[1]; // => "Zara"
+people[4]; // => "Gale"
+people[people.length - 1]; // => "Gale"
 ```
 
 ---
@@ -44,7 +44,7 @@ We can use a `for` loop to get each index in an array and then use that index to
 
 ```js
 for (let i = 0; i < names.length; i++) {
-  console.log("Hello, " + names[i] + "!")
+  console.log("Hello, " + names[i] + "!");
 }
 ```
 
@@ -53,13 +53,12 @@ for (let i = 0; i < names.length; i++) {
 # Using `while` to loop over an array
 
 ```js
-let i = 0
+let i = 0;
 while (i < names.length) {
-  console.log(i, names[i])
-  i = i + 1
+  console.log(i, names[i]);
+  i = i + 1;
 }
 ```
-
 
 ---
 
@@ -69,7 +68,7 @@ For a simpler way to loop over an array and get each member, we can use a `for-o
 
 ```js
 for (let name of names) {
-  console.log("Hello, " + name + "!")
+  console.log("Hello, " + name + "!");
 }
 ```
 
@@ -80,18 +79,18 @@ As the loop runs, each member of `names` is assigned to `name` in order. We _do 
 # Adding to/removing from the ends of arrays
 
 ```js
-let students = ["Sam", "Val", "Landry"]
-students.push("Charlie")
-students // => ["Sam", "Val", "Landry", "Charlie"]
+let students = ["Sam", "Val", "Landry"];
+students.push("Charlie");
+students; // => ["Sam", "Val", "Landry", "Charlie"]
 
-students.pop() // => "Charlie"
-students // => ["Sam", "Val", "Landry"]
+students.pop(); // => "Charlie"
+students; // => ["Sam", "Val", "Landry"]
 
-students.unshift("Logan")
-students // => ["Logan", "Sam", "Val", "Landry"]
+students.unshift("Logan");
+students; // => ["Logan", "Sam", "Val", "Landry"]
 
-students.shift() // => "Logan"
-students // => ["Sam", "Val", "Landry"]
+students.shift(); // => "Logan"
+students; // => ["Sam", "Val", "Landry"]
 ```
 
 ---
@@ -99,11 +98,11 @@ students // => ["Sam", "Val", "Landry"]
 # Finding things in arrays
 
 ```js
-let students = ["Sam", "Val", "Landry"]
+let students = ["Sam", "Val", "Landry"];
 
-students.indexOf("Val") // => 1
-students.indexOf("Landry") // => 2
-students.indexOf("Logan") // => -1
+students.indexOf("Val"); // => 1
+students.indexOf("Landry"); // => 2
+students.indexOf("Logan"); // => -1
 ```
 
 ---
@@ -111,10 +110,10 @@ students.indexOf("Logan") // => -1
 # Removing things from arrays
 
 ```js
-let students = ["Sam", "Val", "Landry"]
-let idx = students.indexOf("Val")
-students.splice(idx, 1) // => ["Val"]
-students // => ["Sam", "Landry"]
+let students = ["Sam", "Val", "Landry"];
+let idx = students.indexOf("Val");
+students.splice(idx, 1); // => ["Val"]
+students; // => ["Sam", "Landry"]
 ```
 
 ---
@@ -122,7 +121,7 @@ students // => ["Sam", "Landry"]
 # Copying arrays
 
 ```js
-students.slice() // returns a new array
+students.slice(); // returns a new array
 ```
 
 ---
@@ -131,9 +130,9 @@ students.slice() // returns a new array
 
 Three things we often want to do are:
 
-* transform an array (create a new array of the same length with derived values)
-* filter an array
-* get one value from an array (sum, min, max, etc)
+- transform an array (create a new array of the same length with derived values)
+- filter an array
+- get one value from an array (sum, min, max, etc)
 
 Let's see two techniques for each of these.
 
@@ -153,11 +152,11 @@ Let's see two techniques for each of these.
 Get word lengths
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let wordLengths = []
+let words = ["tapeworm", "gnarly", "armoire"];
+let wordLengths = [];
 
 for (let word of words) {
-  wordLengths.push(word.length)
+  wordLengths.push(word.length);
 }
 
 // wordLengths => [8, 6, 7]
@@ -170,11 +169,11 @@ for (let word of words) {
 Is the score a passing grade?
 
 ```js
-let scores = [91, 54, 78, 39, 81]
-let passingGrades = []
+let scores = [91, 54, 78, 39, 81];
+let passingGrades = [];
 
 for (let score of scores) {
-  passingGrades.push(score >= 60)
+  passingGrades.push(score >= 60);
 }
 
 // passingGrades => [true, false, true, false, true]
@@ -196,12 +195,12 @@ for (let score of scores) {
 Get only words with length > 6
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let filteredWords = []
+let words = ["tapeworm", "gnarly", "armoire"];
+let filteredWords = [];
 
 for (let word of words) {
   if (word.length > 6) {
-    filteredWords.push(word)
+    filteredWords.push(word);
   }
 }
 
@@ -215,12 +214,12 @@ for (let word of words) {
 Keep only passing scores
 
 ```js
-let scores = [91, 54, 78, 39, 81]
-let passingScores = []
+let scores = [91, 54, 78, 39, 81];
+let passingScores = [];
 
 for (let score of scores) {
   if (score >= 60) {
-    passingScores.push(score)
+    passingScores.push(score);
   }
 }
 
@@ -244,11 +243,11 @@ This is not very clear!
 Find the sum
 
 ```js
-let scores = [91, 54, 78, 39, 81]
-let sum = 0
+let scores = [91, 54, 78, 39, 81];
+let sum = 0;
 
 for (let score of scores) {
-  sum += score
+  sum += score;
 }
 
 // sum => 343
@@ -261,12 +260,12 @@ for (let score of scores) {
 Find the shortest word
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let shortestWord = null
+let words = ["tapeworm", "gnarly", "armoire"];
+let shortestWord = null;
 
 for (let word of words) {
   if (shortestWord === null || word.length < shortestWord.length)
-  shortestWord = word
+    shortestWord = word;
 }
 
 // shortestWord = "gnarly"
@@ -305,15 +304,15 @@ function (score) {
 
 ---
 
-# Transforming an array 
+# Transforming an array
 
 Get word lengths
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let wordLengths = words.map(function (word) {
-  return word.length
-})
+let words = ["tapeworm", "gnarly", "armoire"];
+let wordLengths = words.map(function(word) {
+  return word.length;
+});
 ```
 
 Note that `.map()` runs the loop for us! The function it takes as an argument (the mapping function) takes the individual elements one at a time as its argument.
@@ -323,10 +322,10 @@ Note that `.map()` runs the loop for us! The function it takes as an argument (t
 # Filtering an array
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let filteredWords = words.filter(function (word) {
-  return word.length > 6
-})
+let words = ["tapeworm", "gnarly", "armoire"];
+let filteredWords = words.filter(function(word) {
+  return word.length > 6;
+});
 
 // filteredWords => ["tapeworm", "armoire"]
 ```
@@ -338,10 +337,10 @@ The filtering function should return true or false for each element. Elements wh
 # Reducing an array
 
 ```js
-let scores = [91, 54, 78, 39, 81]
-let sum = scores.reduce(function (total, score) {
-  return total + score
-}, 0)
+let scores = [91, 54, 78, 39, 81];
+let sum = scores.reduce(function(total, score) {
+  return total + score;
+}, 0);
 
 // score => 343
 ```
@@ -360,14 +359,14 @@ Note that `.reduce()` takes two arguments:
 # Reducing an array
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let shortestWord = words.reduce(function (current, word) {
+let words = ["tapeworm", "gnarly", "armoire"];
+let shortestWord = words.reduce(function(current, word) {
   if (word.length < current.length) {
-    return word
+    return word;
   } else {
-    return current
+    return current;
   }
-})
+});
 
 // shortestWord = "gnarly"
 ```
@@ -397,10 +396,10 @@ score => score > 60
 # Arrow function examples
 
 ```js
-let words = ["tapeworm", "gnarly", "armoire"]
-let wordLengths = words.map(word => word.length)
-let filteredWords = words.filter(word => word.length > 6)
+let words = ["tapeworm", "gnarly", "armoire"];
+let wordLengths = words.map(word => word.length);
+let filteredWords = words.filter(word => word.length > 6);
 
-let scores = [91, 54, 78, 39, 81]
-let sum = scores.reduce((total, score) => total + score)
+let scores = [91, 54, 78, 39, 81];
+let sum = scores.reduce((total, score) => total + score);
 ```

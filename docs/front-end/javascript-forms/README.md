@@ -16,9 +16,20 @@ Students should be able to:
 
 ## Demo ideas
 
+- [Glitch project with form demo: t-shirts](https://glitch.com/~great-vinyl)
+
 ## Exercise ideas
+
+- build a simple log in form!
+
+  - Your form should have two inputs: one for an email address and one for a password
+
+- [Simple error message exercise on Glitch](https://glitch.com/~simple-error-msg) (or just use the form from the previous exercise)
 
 ## Resources
 
-## Schedule
+- [MDN Your First Web Form](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
+- [MDN Web Forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+- [MDN HTML Form element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement)
 
+## Schedule
