@@ -260,16 +260,16 @@ for (setup; predicate; update) {
 
 ---
 
-# While loop - finding the first 10 even numbers
+# While loop - finding the first 10 prime numbers
 
 ```js
-let evenCount = 0;
+let primeCount = 0;
 let currentNumber = 1;
 
-while (evenCount < 10) {
-  if (isEven(currentNumber)) {
-    console.log(currentNumber, "is even");
-    evenCount += 1;
+while (primeCount < 10) {
+  if (isPrime(currentNumber)) {
+    console.log(currentNumber, "is prime");
+    primeCount += 1;
   }
   currentNumber += 1;
 }
@@ -277,15 +277,14 @@ while (evenCount < 10) {
 
 ---
 
-# For loop - find if a number is an odd number
+# For loop - find if a number is a prime number
 
 ```js
-// ...
-let limit = 20;
+let x = 5;
 
-for (let i = 1; i <= limit; i++) {
-  if (i % 2 != 0) {
-    console.log(x, "is an odd number");
+for (let i = 3; i * i <= x; i += 2) {
+  if (x % i === 0) {
+    console.log(x, "is not prime");
   }
 }
 ```
