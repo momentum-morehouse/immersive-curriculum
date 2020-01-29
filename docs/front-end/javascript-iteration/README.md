@@ -8,7 +8,9 @@ Students should be able to:
 - iterate over arrays using for, while, and for...of
 - manipulate arrays using push, pop, shift, unshift, splice, slice
 - be able to look up and use array methods as needed
-- understand the three concepts of map, filter, and reduce
+- understand the three basic concepts of array transformation
+  - map, filter, and reduce as concepts using generic loops
+  - map, filter and reduce array methods
 
 ## Assignment
 
