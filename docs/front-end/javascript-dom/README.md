@@ -1,4 +1,4 @@
-# Iteration with JavaScript
+# JavaScript and the DOM
 
 ## Objectives
 
@@ -15,6 +15,15 @@ Students should be able to:
 ## Lecture notes
 
 - explain how the browser parses HTML to create the DOM and renders the page
+
+Most important things for students to know:
+
+- How to select elements with `querySelector` and `querySelectorAll`
+- How to add and remove classes from elements using `classList`
+- How to create new elements with `createElement` and put them into the DOM with `appendChild`
+- How to remove elements
+- How to alter the `innerHTML` of elements
+- How to attach and handle `click` events
 
 ## Demo ideas
 
