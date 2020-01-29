@@ -31,8 +31,10 @@ Most important things for students to know:
 
 ## Exercise ideas
 
-- [DOM manipulation: show/hide on click](https://glitch.com/~dom-de-dom-dom)
-- [DOM manipulation: display data on the page](https://glitch.com/~dom-de-dom-dom-2)
+These are documented like exercises but could also be used as demos.
+
+- [DOM manipulation: display data on the page (event handler included)](https://glitch.com/~dom-de-dom-dom)
+- [DOM manipulation: show/hide on click](https://glitch.com/~dom-de-dom-dom-2)
 
 ## Resources
 
