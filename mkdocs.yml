@@ -14,3 +14,8 @@ nav:
           - "2. Iteration with JS": "front-end/javascript-iteration/README.md"
           - "3. JS and the DOM": "front-end/javascript-dom/README.md"
           - "4. JS and Forms": "front-end/javascript-forms/README.md"
+      - Week 3:
+          - "1. Debugging & exceptions": "front-end/javascript-debugging/README.md"
+          - "2. JS objects": "front-end/javascript-objects/README.md"
+          - "3. JSON & fetch": "front-end/javascript-json-fetch/README.md"
+          - "4. Using fetch to work w/ APIs": "front-end/javascript-apis/README.md"
