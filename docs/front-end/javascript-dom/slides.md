@@ -8,12 +8,12 @@ What does it do?
 
 ```js
 for (let headshot of document.querySelectorAll(".staff-member__headshot")) {
-  headshot.addEventListener('mouseover', function (event) {
-    headshot.src = headshot.dataset['gif']
-  })
-  headshot.addEventListener('mouseout', function (event) {
-     headshot.src = headshot.dataset['src']
-  })
+  headshot.addEventListener("mouseover", function(event) {
+    headshot.src = headshot.dataset["gif"];
+  });
+  headshot.addEventListener("mouseout", function(event) {
+    headshot.src = headshot.dataset["src"];
+  });
 }
 ```
 
@@ -38,15 +38,18 @@ Adapted from [MDN, "Introduction to the DOM"](https://developer.mozilla.org/en-U
 You can find and "grab" elements on the page (DOM nodes) with JavaScript.
 
 ```html
-<img id="kittenPic" alt="kitten"
-src="https://source.unsplash.com/200x300/?kitten" />
+<img
+  id="kittenPic"
+  alt="kitten"
+  src="https://source.unsplash.com/200x300/?kitten"
+/>
 ```
 
 There is more than one way to do this.
 
 ```js
-let image = document.getElementById('kittenPic')
-let image = document.querySelector('#kittenPic')
+let image = document.getElementById("kittenPic");
+let image = document.querySelector("#kittenPic");
 ```
 
 ---
@@ -57,10 +60,10 @@ We can use CSS selectors to get elements.
 
 ```js
 // This will return the first element matching the provided selector
-document.querySelector(".profile-photo")
+document.querySelector(".profile-photo");
 
 // This returns a collection of elements matching the selector
-document.querySelectorAll(".profile-photo")
+document.querySelectorAll(".profile-photo");
 ```
 
 ---
@@ -82,13 +85,13 @@ Let's look at how to do this!
 # Updating element attributes
 
 ```js
-let mainImg = document.querySelector('#main-image')
-mainImg.src
-  // what will this return?
-mainImg.src = 'https://source.unsplash.com/200x300/?ocean'
-  // sets the src attribute to this value
-mainImg.style.border = '4px solid purple'
-  // sets the style attribute and border property to this value
+let mainImg = document.querySelector("#main-image");
+mainImg.src;
+// what will this return?
+mainImg.src = "https://source.unsplash.com/200x300/?ocean";
+// sets the src attribute to this value
+mainImg.style.border = "4px solid purple";
+// sets the style attribute and border property to this value
 ```
 
 ---
@@ -98,8 +101,8 @@ mainImg.style.border = '4px solid purple'
 Making changes to classes lets us apply styles to, or remove styles from, elements in the DOM.
 
 ```js
-let el = document.querySelector('.input--name')
-el.classList.add('highlight')
+let el = document.querySelector(".input--name");
+el.classList.add("highlight");
 ```
 
 ---
@@ -107,16 +110,16 @@ el.classList.add('highlight')
 # Adding things to the DOM
 
 ```js
-let existingElement = document.querySelector('.empty-div')
-  // First select where you want to place the new content
-let newElement = document.createElement('div')
- // Create the new element
-let text = document.createTextNode("Hello there!")
- // Create some text
-newElement.appendChild(text)
- // Add text to new element
-existingElement.appendChild(newElement)
-  // Add that element to the DOM
+let existingElement = document.querySelector(".empty-div");
+// First select where you want to place the new content
+let newElement = document.createElement("div");
+// Create the new element
+let text = document.createTextNode("Hello there!");
+// Create some text
+newElement.appendChild(text);
+// Add text to new element
+existingElement.appendChild(newElement);
+// Add that element to the DOM
 ```
 
 ---
@@ -124,8 +127,8 @@ existingElement.appendChild(newElement)
 # Removing things from the DOM
 
 ```js
-let elementToRemove = document.querySelectorAll('li')[2]
-elementToRemove.remove()
+let elementToRemove = document.querySelectorAll("li")[2];
+elementToRemove.remove();
 ```
 
 ---
@@ -135,8 +138,8 @@ elementToRemove.remove()
 You can directly manipulate the DOM using `.innerHTML`, but you can break it easily.
 
 ```js
-let element = document.getElementById('product-title')
-element.innerHTML = '<h2>Boomerang</h2>'
+let element = document.getElementById("product-title");
+element.innerHTML = "<h2>Boomerang</h2>";
 ```
 
 ---
@@ -146,8 +149,8 @@ element.innerHTML = '<h2>Boomerang</h2>'
 If you're using `.innerHTML` often, using _template literals_ can help. These allow you to interpolate code in your string.
 
 ```js
-let name = "Amani"
-let content = `<h2>Hello, ${name}!</h2>`
+let name = "Amani";
+let content = `<h2>Hello, ${name}!</h2>`;
 ```
 
 ---
@@ -172,17 +175,17 @@ User interactions create events on the page. JavaScript can handle these events:
 
 Let's say you want a certain function to run when an image on the page is clicked.
 
-* Select the DOM node for the element that will be clicked (the image).
-* [Choose the event](https://developer.mozilla.org/en-US/docs/Web/Events) that will act as the trigger for the function (the mouse click).
-* Specify the function that you wish to run when the event occurs.
+- Select the DOM node for the element that will be clicked (the image).
+- [Choose the event](https://developer.mozilla.org/en-US/docs/Web/Events) that will act as the trigger for the function (the mouse click).
+- Specify the function that you wish to run when the event occurs.
 
 ---
 
 # Event listeners
 
 ```js
-let button = document.querySelector('.cancelButton')
-button.addEventListener('click', function () {
-  alert('Are you sure you want to cancel?')
-})
+let button = document.querySelector(".cancelButton");
+button.addEventListener("click", function() {
+  alert("Are you sure you want to cancel?");
+});
 ```
