@@ -5,8 +5,12 @@
 Students should be able to:
 
 - create arrays
-- iterate over arrays
-- understand the three concepts of map, filter, and reduce
+- iterate over arrays using for, while, and for...of
+- manipulate arrays using push, pop, shift, unshift, splice, slice
+- be able to look up and use array methods as needed
+- understand the three basic concepts of array transformation
+  - map, filter, and reduce as concepts using generic loops
+  - map, filter and reduce array methods
 
 ## Assignment
 
@@ -18,11 +22,13 @@ This is a series of problems to solve with instant feedback via tests.
 
 ## Demo ideas
 
+- [Visualization of reduce](https://reduce.surge.sh/)
+
 ## Exercise ideas
 
 ## Resources
 
 - [Slides](slides.md)
+- [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## Schedule
-
