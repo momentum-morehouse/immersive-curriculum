@@ -1,7 +1,5 @@
 autoscale: true
 
-# Forms and events
-
 ---
 
 # Form elements
@@ -12,6 +10,38 @@ autoscale: true
 - `<textarea>`
 - `<select>` and `<option>`
 - `<button>`
+
+---
+
+```html
+<div>
+  <form method="post" action="/" id="login-form">
+    <div class="input-field">
+      <label for="email-input">Email</label>
+      <input
+        type="email"
+        name="email-input"
+        id="email-input"
+        placeholder="example@domain.com"
+        required
+      />
+    </div>
+    <div class="input-field">
+      <label for="password-input">Password</label>
+      <input
+        type="password"
+        name="password-input"
+        id="password-input"
+        required
+      />
+    </div>
+    <div class="input-field">
+      <label for=""></label>
+      <input type="submit" value="Log In" />
+    </div>
+  </form>
+</div>
+```
 
 ---
 
@@ -60,6 +90,12 @@ autoscale: true
 ---
 
 # How do I find this stuff in the docs?
+
+---
+
+---
+
+# FormData
 
 ---
 
