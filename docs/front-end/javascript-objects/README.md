@@ -14,6 +14,14 @@ Customer database: display data on a page using DOM manipulation and objects
 
 ## Lecture notes
 
+The most important things for students to know:
+
+- Objects are a collection of keys and values
+- Use objects to collect different data about one thing; arrays for multiple things
+- Object keys are strings; object values are anything -- including arrays, other objects, and functions
+- Object values can be retrieved with dot-notation or bracket-notation.
+  - Bracket notation is good for dynamic lookup or weird keys
+
 ## Demo ideas
 
 ## Exercise ideas
@@ -26,7 +34,3 @@ Customer database: display data on a page using DOM manipulation and objects
 
 ## Schedule
 
-- Say: (10 minutes) history of HTML
-- Say: (10 minutes) web page structure
-- Show: (20 minutes) make a sample web page about bears
-- Do (10 min) exercise 1 -- build structure from image
