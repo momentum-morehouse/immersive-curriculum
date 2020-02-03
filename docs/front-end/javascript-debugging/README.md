@@ -20,11 +20,15 @@ Pair assignment. Students should use debugging techniques from class and work on
 
 ## Demo ideas
 
+- Number guessing game with bugs ([source](https://github.com/mdn/learning-area/blob/master/javascript/introduction-to-js-1/troubleshooting/number-game-errors.html))
+
 ## Exercise ideas
 
-[MDN: troubleshooting exercise number guessing game](https://github.com/mdn/learning-area/blob/master/javascript/introduction-to-js-1/troubleshooting/number-game-errors.html)
+- Pair debug a small function ([code](bugs.js))
 
 ## Resources
 
 - [MDN Error Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
 - [MDN Troubleshooting JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/)
+  - [Debugging JS](https://developers.google.com/web/tools/chrome-devtools/javascript/)
