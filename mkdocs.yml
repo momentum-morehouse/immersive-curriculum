@@ -1,6 +1,7 @@
 site_name: Momentum Curriculum
 nav:
   - Home: README.md
+  - Instructor Handbook: "handbook/README.md"
   - Skills: skills.md
   - Phase One:
       - Week 1:
