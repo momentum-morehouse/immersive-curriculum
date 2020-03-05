@@ -4,19 +4,22 @@ nav:
   - Instructor Handbook: "handbook/README.md"
   - Skills: skills.md
   - Phase One:
-      - Week 1:
-          - "Establishing the Community of the Classroom": "community.md"
-          - "1. Command Line and Git": "front-end/command-line-and-git/lesson.md"
-          - "2. HTML": "front-end/html/lesson.md"
-          - "3. CSS Basics": "front-end/css-basics/lesson.md"
-          - "4. CSS Layout": "front-end/css-layout/lesson.md"
-      - Week 2:
-          - "1. Programming Basics with JS": "front-end/javascript-basics/README.md"
-          - "2. Iteration with JS": "front-end/javascript-iteration/README.md"
-          - "3. JS and the DOM": "front-end/javascript-dom/README.md"
-          - "4. JS and Forms": "front-end/javascript-forms/README.md"
-      - Week 3:
-          - "1. Debugging & exceptions": "front-end/javascript-debugging/README.md"
-          - "2. JS objects": "front-end/javascript-objects/README.md"
-          - "3. JSON & fetch": "front-end/javascript-json-fetch/README.md"
-          - "4. Using fetch to work w/ APIs": "front-end/javascript-apis/README.md"
+    - Week 1:
+      - "Establishing the Community of the Classroom": "community.md"
+      - "1. Command Line and Git": "front-end/command-line-and-git/lesson.md"
+      - "2. HTML": "front-end/html/lesson.md"
+      - "3. CSS Basics": "front-end/css-basics/lesson.md"
+      - "4. CSS Layout": "front-end/css-layout/lesson.md"
+    - Week 2:
+      - "1. Programming Basics with JS": "front-end/javascript-basics/README.md"
+      - "2. Iteration with JS": "front-end/javascript-iteration/README.md"
+      - "3. JS and the DOM": "front-end/javascript-dom/README.md"
+      - "4. JS and Forms": "front-end/javascript-forms/README.md"
+    - Week 3:
+      - "1. Debugging & exceptions": "front-end/javascript-debugging/README.md"
+      - "2. JS objects": "front-end/javascript-objects/README.md"
+      - "3. JSON & fetch": "front-end/javascript-json-fetch/README.md"
+      - "4. Using fetch to work w/ APIs": "front-end/javascript-apis/README.md"
+  - Phase Two:
+    - "Django, JSON, and Ajax": "back-end/django-ajax/README.md"
+    - "Deployment": "back-end/deployment-heroku/README.md"
