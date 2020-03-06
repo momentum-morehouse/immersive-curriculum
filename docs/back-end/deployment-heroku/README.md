@@ -15,4 +15,3 @@ Students should be able to:
 
 * [Heroku Python docs](https://devcenter.heroku.com/categories/python-support)
 
-## Schedule

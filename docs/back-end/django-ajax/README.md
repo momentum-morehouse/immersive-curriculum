@@ -67,7 +67,3 @@ They _should_ mean the following, although you can define them however you want.
   * Delete previous activities
   * How to handle starting a timer if you have one already running?
   * Use `json_script` and chart.js for showing overviews.
-
-## Resources
-
-## Schedule
