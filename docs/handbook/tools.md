@@ -3,10 +3,6 @@
 [Remote work guidelines](https://docs.google.com/document/d/1l2RYOM-fdJCgd7nWbXp2k_t6xNDNRVZDlqEfn83TACg/edit?usp=sharing)
 
 
-## Google Classroom
-
-Seeing assignments and content
-
 ## GitHub Classroom
 
 - Accepting assignments; cloning homework repos from the team account
