@@ -12,13 +12,13 @@
 
 ### Circle Practice: Introductions
 
-Ask students to arrange their chairs in a circle (the instructor is part of the circle). Open the circle by welcoming students and asking each person to say their name and why they decided to learn to code [NB: what do we want here??]
+Ask students to arrange their chairs in a circle (the instructor is part of the circle). Open the circle by welcoming students and asking each person to say their name and why they decided to learn to code
 
 ### Group Agreement Generation
 
-A group agreement serves as a founding document for how our community will work and be together.
+A group agreement serves as a founding document for how our community will work and be together. It reflects the needs and values of each team of students that come together to learn and work.
 
-We will generate the agreement together through a series of exercises that require each person to contribute to the substance and wording of the agreement and to give their individual assent to it.
+We generate an agreement together through a series of exercises that require each person to contribute to the substance and wording of the agreement and to give their individual assent to it.
 
 Supplies: a good quantity of sticky notes and pens
 Time: plan for one hour
@@ -33,9 +33,18 @@ Time: plan for one hour
 - Ask each person individually if they agree.
 - The agreement requires positive verbal assent from each person, so be ready to make changes to the agreement as needed to achieve this.
 
+#### Remote alternative
+
+If class is meeting over Zoom, you can do the same activity using the remote tools.
+
+- You can put participants in breakout rooms for discussion.
+- You can ask participants to use the chat feature instead of sticky notes to write their comments.
+- The feedback tools available to each participant have a YES or NO option to allow people to agree or disagree.
+
+
 #### Questions to ask
 
-- What things would make this group work well for you?
+- What would make this group work well for you?
 - What makes this a safe and respectful place for us to work in?
 - What would make this group a good space for learning?
 
