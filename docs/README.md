@@ -25,10 +25,10 @@ All of our curriculum as well as our instructor handbook can be found within.
 
 ## Phase 2
 
-* W1D1 - 
-* W1D2 - 
-* W1D3 - 
-* W1D4 - 
+* W1D1 - Intro to Python
+* W1D2 - Collections, file IO
+* W1D3 - Comprehensions and the standard library
+* W1D4 - Python OO
 * W2D1 - Introduction to Django
 * W2D2 - Django views, templates, and static files
 * W2D3 - Django models and admin
